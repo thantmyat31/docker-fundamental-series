@@ -5,10 +5,10 @@ $ docker build -f Dockerfile.dev .
 $ docker run -it -p 3000:3000 [ IMAGE ]
 
 #### Run react frontend in docker by mapping volume from local machine
-** For windows OS **
+**For windows OS** <br />
 $ docker run -it -p 3000:3000 -v /app/node_modules -v ${PWD}:/app -e CHOKIDAR_USEPOLLING=true [ IMAGE ]
 
-** For others OS **
+**For others OS** <br />
 $ docker run -it -p 3000:3000 -v /app/node_modules -v $(pwd):/app [ IMAGE ]
 
 #### Run react frontend static UI on Nginx server as docker image
